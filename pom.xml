@@ -19,6 +19,17 @@
 		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
 		<logstash-logback-encoder.version>6.1</logstash-logback-encoder.version>
 	</properties>
+	<distributionManagement>
+    <repository>
+        <id>nexus</id>
+        <url>http://13.234.10.62:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+        <id>nexus</id>
+        <url>http://13.234.10.62:8081/repository/snapshot-repo/</url>
+    </snapshotRepository>
+</distributionManagement>
+
 
 	<dependencyManagement>
 			<dependencies>
